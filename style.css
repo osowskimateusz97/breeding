@@ -246,9 +246,28 @@ container2 {
 }
 
 @media only screen and (max-width: 650px) {
+	.cat-icon{
+		width:10px;
+		height: 10px;
+	}
+	.title {
+		font-size:25px;
+	}
 	.carousel-indicators {
 		margin: 0;
 
+	}
+	.navbar-toggler{
+		width:30px;
+		height: 30px;
+	}
+	.navbar-toggler-icon{
+		transform: translate(-14px,-3px);
+		
+		width:0em;
+		height: 1.4rem !important;		
+		
+		
 	}
 
 	.button2 {
@@ -272,7 +291,8 @@ container2 {
 	}
 
 	.carousel-btn {
-		font-size: 0.85rem !important;
+		font-size: 0.80rem !important;
+		transform: translateY(-15px);
 
 	}
 
@@ -286,7 +306,7 @@ container2 {
 
 .cat-icon {
 	width: 20px;
-	height: 10px;
+	height: 20px;
 }
 
 .carousel-caption h3 {
@@ -383,8 +403,8 @@ nav ul li a {
 
 
 .cat-icon {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	position: absolute;
 	padding: 5px;
 	top: 5px;
