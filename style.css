@@ -1,27 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Parisienne&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&subset=latin-ext');
 
 .navbar {
-
 	font-family: 'Lora', serif;
 
-
 }
 
-@media only screen and (max-width: 900px) {
-	.navbar {
-		min-height: 7vh;
 
-	}
 
-	.navbar h1 {
-		font-size: 1.5em;
-
-	}
-}
 
 .navbar-light .navbar-toggler {
 	border: 2px solid #ffffff;
@@ -34,6 +22,16 @@
 
 }
 
+.title {
+	margin-left: 30px;
+}
+.navbar-toggler:focus,.navbar-toggler:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+
+
 .display-4 {
 	margin-bottom: 40px;
 	font-family: 'Raleway', sans-serif;
@@ -43,6 +41,7 @@ container2 {
 	width: 50vw;
 	height: 50vh;
 }
+
 
 .dropdown-menu.show {
 	border: 0px;
@@ -54,33 +53,13 @@ container2 {
 }
 
 .lead {
-	font-family: 'Raleway', sans-serif;
-
-}
-.container-quote{
-	width: 100vw;
-	height: 100vh;
-	position:absolute;
-}
+	font-family: 'Lora', serif;
 
 
-.carousel-footer {
-	font-family: 'Parisienne', cursive;
-	font-size: 2em;
-	
-}
-.citat{
-	font-size:1em;
-}
-
-
-
-.carousel-item {
-	width: 100vw;
 }
 
 .navbar-nav li {
-	padding-right: 20px;
+	margin-left: 9px;
 }
 
 .menu {
@@ -105,8 +84,6 @@ container2 {
 	position: absolute;
 	top: 55%;
 	transform: translateY(-50%);
-
-
 }
 
 .carousel-indicators {
@@ -118,19 +95,150 @@ container2 {
 	letter-spacing: 5px;
 	font-size: 500%;
 	text-shadow: 1px 1px 10px #000;
+}
+
+
+
+
+.button2 {
+	font-family: 'Lora', serif;
+	position: absolute;
+	color: #fff;
+	padding: 15px;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow: hidden;
+	background: #ff5f6d;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff5f6d, #ffc371);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.container-citation {
-	margin-top: 50%;
+.button2:hover {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.8;
 }
+
+.button2:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.button2 span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #c0392b, #8e44ad);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+
+	}
+
+	100% {
+		transform: translateX(100%);
+
+	}
+}
+
+.button2 span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to bottom, #c0392b, #8e44ad);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+
+	}
+
+	100% {
+		transform: translateY(100%);
+
+	}
+}
+
+.button2 span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, #c0392b, #8e44ad);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+
+	}
+
+	100% {
+		transform: translateX(-100%);
+
+	}
+}
+
+.button2 span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to top, #c0392b, #8e44ad);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+
+	}
+
+	100% {
+		transform: translateY(-100%);
+
+	}
+}
+
+
+
+
+
 
 .button-container {
-	width: 100vw;
+	padding: 10px;
+}
 
+.blockquote {
+	font-family: 'Titillium Web', sans-serif;
 }
 
 @media only screen and (max-width: 1000px) {
+
 	.carousel-caption h1 {
 		font-size: 300%;
 
@@ -143,6 +251,12 @@ container2 {
 	.carousel-indicators {
 		margin: 0;
 
+	}
+
+	.button2 {
+		padding: 6px;
+		font-size: 1em;
+		transform: translateY(-10px);
 	}
 
 	.carousel-caption h1 {
@@ -159,23 +273,32 @@ container2 {
 
 	}
 
+	.carousel-btn {
+		font-size: 0.85rem !important;
+
+	}
+
+
+
 
 
 }
 
-@media only screen and (max-width:420px) {
-	.carousel-caption {
-		font-size: 0.8em;
-		top: 40%;
-	}
+
+
+.cat-icon {
+	width: 20px;
+	height: 10px;
 }
 
 .carousel-caption h3 {
 	font-size: 200%;
-
-	text-shadow: 2px 1px 15px #000;
+	text-shadow: 3px 1px 15px #000;
 	padding-bottom: 1rem;
 }
+
+
+
 
 /** 					**/
 nav.black {
@@ -217,6 +340,8 @@ nav ul li a {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1000;
+	animation-name: btn;
+	animation-duration: 2s;
 }
 
 #button1::after {
@@ -243,23 +368,7 @@ nav ul li a {
 	visibility: visible;
 }
 
-@media only screen and (max-width:770px) {
-	#button1 {
-		width: 40px;
-		height: 40px;
-		font-size: 0.5em;
-		transform: translateX(26px);
-	}
 
-	#button1:hover {
-		background: #f44250;
-	}
-
-	#button1::after {
-		line-height: 40px;
-	}
-
-}
 
 
 /**social media**/
@@ -273,13 +382,21 @@ nav ul li a {
 
 }
 
-.active-social-icon:hover {
-	transform: scale(1.2);
+
+
+.cat-icon {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	padding: 5px;
+	top: 5px;
+	left: 2%;
+	animation-name: cat;
+	animation-duration: 2s;
+	
+
 
 }
-
-
-
 
 .social-title {
 	margin-top: 50px;
@@ -304,7 +421,7 @@ nav ul li a {
 	color: #ddd;
 	display: flex;
 	flex-direction: column;
-	height: 25vh;
+	min-height: 25vh;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -323,7 +440,7 @@ nav ul li a {
 	margin-bottom: 10px;
 	margin-right: 86px;
 	text-align: right;
-
+	
 
 }
 
@@ -352,10 +469,43 @@ nav ul li a {
 	transform: scale(1.3);
 
 }
+
 @media only screen and (max-width:770px) {
-.fb-customerchat{
-	transform: translateX(23px);
+	#button1 {
+		width: 40px;
+		height: 40px;
+		font-size: 0.5em;
+		transform: translateX(26px);
+	}
+
+	#button1:hover {
+		background: #f44250;
+	}
+
+	#button1::after {
+		line-height: 40px;
+	}
+
 }
+
+@media only screen and (min-width:670px) {
+	.active-social-icon:hover {
+		transform: scale(1.2);
+
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.navbar {
+		min-height: 7vh;
+}
+}
+
+
+@media only screen and (max-width:770px) {
+	.fb-root {
+		transform: translateX(23px);
+	}
 
 }
 
@@ -366,7 +516,14 @@ nav ul li a {
 	}
 }
 
-
+@keyframes cat2 {
+	from {
+		transform: rotateY(180deg);
+	}
+	to {
+		transform:rotateY(-180deg);
+	}
+}
 
 
 
@@ -380,13 +537,34 @@ nav ul li a {
 
 @keyframes example {
 	from {
-		color: #fff
+		color: #fff;
 	}
 
 	to {
 		color: #000;
 	}
 }
+
+@keyframes cat {
+	from {
+		left: -30px;
+	}
+
+	to {
+		left: 2vw;
+	}
+}
+
+@keyframes btn {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
 
 .icon-tag {
 	display: none;
