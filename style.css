@@ -246,8 +246,9 @@ container2 {
 	}
 
 	.carousel-btn {
-		font-size: 0.80rem !important;
-		transform: translateY(-15px);
+		box-sizing: border-box;
+		font-size: 0.75rem !important;
+		transform: translateY(-20px);
 
 	}
 
@@ -274,14 +275,7 @@ container2 {
 
 
 /** 					**/
-nav.black {
 
-	padding: 0;
-	background-color: #fff000;
-	color: #000;
-	animation-name: btn;
-	animation-duration: 1s;
-}
 
 nav.black ul li a {
 	color: #000;
@@ -317,6 +311,7 @@ nav ul li a {
 	z-index: 1000;
 	animation-name: btn;
 	animation-duration: 2s;
+	
 
 
 }
@@ -329,6 +324,7 @@ nav ul li a {
 	font-size: 1.1em;
 	line-height: 50px;
 	color: black;
+	
 }
 
 #button1:hover {
@@ -444,8 +440,11 @@ nav ul li a {
 	.container-contact {
 		justify-content: flex-start;
 		font-size: 15px;
-		transform: translateX(-5px;
-		)
+		padding-left:10px;
+		
+	}
+	.contact{
+		padding:10px;
 	}
 
 }
@@ -584,6 +583,7 @@ footer {
 		height: 40px;
 		font-size: 0.5em;
 		transform: translateX(26px);
+		margin-right: 7px;
 	}
 
 	#button1:hover {
@@ -594,6 +594,7 @@ footer {
 	#button1::after {
 		line-height: 40px;
 	}
+	
 
 }
 
@@ -602,6 +603,7 @@ footer {
 		transform: scale(1.2);
 
 	}
+	
 }
 
 @media only screen and (max-width: 900px) {
