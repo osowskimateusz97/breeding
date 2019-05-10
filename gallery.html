@@ -66,6 +66,7 @@
 	</nav>
 	<div class="title-container">
 	<h1 class="col-12 title-gallery">Zdjęcia kotki Holly</h1>
+	<i class="fal fa-angle-double-right"></i><p class="swipe-content">Przesuń</p>
 	</div>
 	<div class="swiper-container">
    <div class="swiper-wrapper">
@@ -79,10 +80,8 @@
       <script>
 		window.sr = ScrollReveal();
 
-		sr.reveal('.title-gallery', {
-			origin: 'top',
-			distance: '1000px',
-			duration: 800
+		sr.reveal('.title-gallery,.fal,.swipe-content', {
+			delay: 500
 		});
 		sr.reveal('.swiper-container', {
 			origin: 'right',
