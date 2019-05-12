@@ -4,9 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext');
+@font-face 
+{
+	font-family: Miama Regular;
+	src:url(Miama.otf);
+}
 .navbar {
-	font-family: 'Lora', serif;
-
+	font-family: 'Raleway', sans-serif;
+	
 }
 
 
@@ -25,9 +30,10 @@
 
 .title {
 	text-decoration: none !important;
-	
+	margin-
+	font-size:1.5em;
 	color:#000;
-	margin-left: 30px;
+	
 }
 
 .navbar-toggler:focus,
