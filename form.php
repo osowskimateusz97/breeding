@@ -6,17 +6,17 @@ if(empty($_POST['submit'])) {
 <form action="" method="post">
 <tr>
   <td>Imię i Nazwisko:</td>
-  <td><input type="text" name="name"/></td>
+  <td><input type="text" name="formName"/></td>
 </tr>
 
 <tr>
   <td>E-Mail:</td>
-  <td><input type="text" name="email"/></td>
+  <td><input type="text" name="formEmail"/></td>
 </tr>
 
 <tr>
   <td>Treść wiadomości:</td>
-  <td><textarea name="message"></textarea></td>
+  <td><textarea name="formText"></textarea></td>
 </tr>
 
 <tr>
@@ -32,10 +32,10 @@ if(empty($_POST['submit'])) {
 $email = 'osowski.mateuszz@gmail.com';
 
 //dane z formularza
-$formName = $_POST['name'];
-$formEmail = $_POST['email'];
-$formPhone = $_POST['phone'];
-$formText = $_POST['message'];
+$formName = $_POST['formName'];
+$formEmail = $_POST['formEmail'];
+$formPhone = $_POST['formPhone'];
+$formText = $_POST['formText'];
 
 if(!empty($formName) && !empty($formEmail) && !empty($formText)) {
 
@@ -59,7 +59,7 @@ if(checkMail($formEmail)) {
  
   //tworzymy szkielet wiadomości
   //treść wiadomości
-  $mailText = "Treść wiadomości:\n$formText\nOd: $formName, $formEmail ($ip, $host)";
+  $mailText = "Treść wiadomości:\n$formText\nOd: $formName, $formEmail,$formPhone ($ip, $host)";
  
   //adres zwrotny
   $mailHeader = "From: $formName <$formEmail>";
