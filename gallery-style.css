@@ -108,6 +108,9 @@ a {
 		width: 300px;
 		height: 300px;
 	}
+	.swiper-pagination {
+		top:65%;
+	}
 
 
 }
