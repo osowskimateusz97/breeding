@@ -1,28 +1,83 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
-session_start();
-if(!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message'])){
+//--- początek formularza ---
+if(empty($_POST['submit'])) {
+?>
+<table>
+<form action="" method="post">
+<tr>
+  <td>Imię i Nazwisko:</td>
+  <td><input type="text" name="formName"/></td>
+</tr>
 
-    $email_odbiorcy = 'osowski.mateuszz@gmail.com'; 
-    $header = 'Reply-To: <'.$_POST['email']."> \r\n";  
-    $header .= "MIME-Version: 1.0 \r\n";  
-    $header .= "Content-Type: text/html; charset=UTF-8";  
-    $wiadomosc = "<p>Dostałeś wiadomość od:</p>"; 
-    $wiadomosc .= "<p>Imie i nazwisko: " . $_POST['name'] . "</p>"; 
-	 $wiadomosc .= "<p>Telefon: " . $_POST['phone'] . "</p>"; 
-    $wiadomosc .= "<p>Email: " . $_POST['email'] . "</p>"; 
-    $wiadomosc .= "<p>Wiadomość: " . $_POST['message'] . "</p>"; 
-    $message = '<!doctype html><html lang="pl"><head><meta charset="utf-8">'.$wiadomosc.'</head><body>';
-    $subject = 'Wiadomość ze strony...';
-    $subject = '=?utf-8?B?'.base64_encode($subject).'?=';
-    if(mail($email_odbiorcy , $subject, $message, $header)){ 
-      die('Wiadomość została wysłana'); 
-    }else{ 
-      die('Wiadomość nie została wysłana'); 
-    } 
-  
+<tr>
+  <td>E-Mail:</td>
+  <td><input type="text" name="formEmail"/></td>
+</tr>
+
+<tr>
+  <td>Treść wiadomości:</td>
+  <td><textarea name="formText"></textarea></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" name="submit" value="Wyślij formularz"/></td>
+</tr>
+</form>
+</table>
+<?php
+} else {
+
+//twoje dane
+$email = 'osowski.mateuszz@gmail.com';
+
+//dane z formularza
+$formName = $_POST['formName'];
+$formEmail = $_POST['formEmail'];
+$formPhone = $_POST['formPhone'];
+$formText = $_POST['formText'];
+
+if(!empty($formName) && !empty($formEmail) && !empty($formText)) {
+
+//--- początek funkcji weryfikującej adres e-mail ---
+function checkMail($checkmail) {
+  if(filter_var($checkmail, FILTER_VALIDATE_EMAIL)) {
+    if(checkdnsrr(array_pop(explode("@",$checkmail)),"MX")){
+        return true;
+      }else{
+        return false;
+      }
+  } else {
+    return false;
+  }
 }
-else {
-	die('Wiadomość nie została wysłana'); 
+//--- koniec funkcji ---
+if(checkMail($formEmail)) {
+  //dodatkowe informacje: ip i host użytkownika
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+ 
+  //tworzymy szkielet wiadomości
+  //treść wiadomości
+  $mailText = "Treść wiadomości:\n$formText\nOd: $formName, $formEmail,$formPhone ($ip, $host)";
+ 
+  //adres zwrotny
+  $mailHeader = "From: $formName <$formEmail>";
+ 
+  //funkcja odpowiedzialna za wysłanie e-maila
+  @mail($email, 'Formularz kontaktowy', $mailText, $mailHeader) or die('Błąd: wiadomość nie została wysłana');
+ 
+  //komunikat o poprawnym wysłaniu wiadomości
+  echo 'Wiadomość została wysłana';
+} else {
+  echo 'Adres e-mail jest niepoprawny';
+}
+
+} else {
+  //komunikat w przypadku nie powodzenia
+  echo 'Wypełnij wszystkie pola formularza';
+}
+
+//--- koniec formularza ---
 }
 ?>
