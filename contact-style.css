@@ -57,3 +57,10 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
   background: #ef5862;
 }
+@media only screen and (max-width: 650px){
+	.contact-section h1{
+		font-size:1.8em ;
+	}
+}
+	
+

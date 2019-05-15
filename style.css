@@ -4,14 +4,13 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&subset=latin-ext');
+
 
 .navbar {
 	font-family: 'Raleway', sans-serif;
-	
+
 }
-
-
-
 
 .navbar-light .navbar-toggler {
 	border: 2px solid #ffffff;
@@ -24,12 +23,19 @@
 
 }
 
+.display-2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 4em !important;
+}
+
 .title {
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 1px;
 	margin-left: 10px;
 	text-decoration: none !important;
-	font-size:1.5em;
-	color:#000;
-	
+	font-size: 1.5em;
+	color: #000;
+
 }
 
 .navbar-toggler:focus,
@@ -38,11 +44,21 @@
 	box-shadow: none;
 }
 
+.citate {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.2px;
+	padding: 20px;
+}
+
+.blockquote-footer {
+	font-family: 'Raleway', sans-serif;
+}
+
 
 
 .introduce {
+	margin-top:2em;
 	font-size: 3em;
-	margin-bottom: 40px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -59,11 +75,67 @@
 }
 
 .lead {
-	font-family: 'Lora', serif;
-	font-size: 20px !important;
-	letter-spacing: 0.5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.1px;
+	height: 80vh;
+	font-weight: 1000;
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	color:#000;
+	
+	}
+.lead p {
+	font-size:1.3rem;
+}
+.container-lead{
+	position:relative;
+	display: flex;
+	justify-content: center;
+}
+.jumbotron:first-child{
+	margin-bottom:0 !important;
 }
 
+.breeding-container{
+	
+	background: url(img/woman-3077180_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0 auto;
+}
+.breeding-info{
+	
+	background:  rgba(255, 255, 255, 0.7);
+	
+	
+}
+
+.breeding-info::before,
+{
+	content:'';
+	border: 1px solid #000;
+	position:absolute;
+	display:block;
+	width:100%;
+	height: 100%;
+	opacity:1 !important;
+	
+		
+}
+ 
+
+
+
+.logo-fife{
+	width:100px;
+	height: 100px;
+	margin: 0 auto;
+	
+	
+}
 .navbar-nav li {
 	margin-left: 9px;
 }
@@ -76,7 +148,8 @@
 	max-height: 93.5vh;
 
 }
-.carousel-item img{
+
+.carousel-item img {
 	width: 100%;
 }
 
@@ -85,7 +158,7 @@
 
 
 .carousel-caption {
-	font-family: 'Titillium Web', sans-serif;
+
 	position: absolute;
 	top: 55%;
 	transform: translateY(-50%);
@@ -97,8 +170,8 @@
 
 .carousel-caption h1 {
 
-	letter-spacing: 5px;
-	font-size: 500%;
+	letter-spacing: 2px;
+
 	text-shadow: 1px 1px 10px #000;
 }
 
@@ -161,30 +234,49 @@
 
 /** **/
 
-.button-container {
-	padding: 10px;
-}
+
 
 .blockquote {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-@media only screen and (max-width: 1000px) {
 
-	.carousel-caption h1 {
-		font-size: 300%;
-
-	}
-
-
-}
 
 @media only screen and (max-width: 650px) {
+	.lead p{
+		font-size:0.6em;
+	}
+	.logo-fife{
+		width:40px;
+	height: 40px;
+	}
+	.display-2 {
+		font-size: 1.5em !important;
+	}
+
+	.content-carousel {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.1em !important;
+	}
+
 	.btn1 {
 		box-sizing: border-box;
 		margin-top: 3em;
 		left: -50px;
-		color:black;
+		color: black;
+	}
+
+	.introduce {
+		margin-top:15px;
+		font-size: 1.5em;
+	}
+
+	.citate {
+		font-size: 14px;
+	}
+
+	.blockquote-footer {
+		font-size: 14px !important;
 	}
 
 	.cat-icon {
@@ -194,7 +286,7 @@
 
 	.title {
 		text-decoration: none;
-		color:#000;
+		color: #000;
 		font-size: 25px;
 	}
 
@@ -206,7 +298,7 @@
 	.button {
 		font-size: 0.9em;
 		top: -20px;
-		
+
 	}
 
 	.navbar-toggler {
@@ -221,40 +313,25 @@
 
 
 	}
-	.lead {
-	font-family: 'Lora', serif;
-	font-size: 17px !important;
-}
+
+	
+
 	.button2 {
 		padding: 6px;
 		font-size: 1em;
 		transform: translateY(-10px);
 	}
 
-	.carousel-caption h1 {
-		font-size: 0;
-
-	}
-
-	.carousel-caption {
-		font-size: 1em;
-	}
-
 	.carousel-caption {
 		top: 50%;
-
 	}
 
 	.carousel-btn {
+		font-family: 'Source Sans Pro', sans-serif;
 		box-sizing: border-box;
-		font-size: 0.75rem !important;
-		transform: translateY(-20px);
-
+		font-size: 0.7rem !important;
+		transform: translateY(-15px);
 	}
-
-
-
-
 
 }
 
@@ -296,8 +373,6 @@ nav ul li a {
 
 #button1 {
 	display: inline-block;
-	background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-		radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -305,7 +380,7 @@ nav ul li a {
 	position: fixed;
 	bottom: 140px;
 	right: 30px;
-	transition: background-color .3s,
+	transition: background-color .5s,
 		opacity .5s, visibility .5s;
 	opacity: 0;
 	visibility: hidden;
@@ -313,6 +388,7 @@ nav ul li a {
 	animation-name: btn;
 	animation-duration: 2s;
 	
+
 
 
 }
@@ -325,12 +401,12 @@ nav ul li a {
 	font-size: 1.1em;
 	line-height: 50px;
 	color: black;
-	
+
 }
 
 #button1:hover {
 	cursor: pointer;
-	background-color: #ffd700;
+	background-color:  #ccff66;
 
 }
 
@@ -367,7 +443,7 @@ nav ul li a {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	
+
 	top: 10px;
 	left: 2%;
 	animation-name: cat;
@@ -379,13 +455,25 @@ nav ul li a {
 
 .social-title {
 	margin-top: 50px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 500;
+}
+
+@media only screen and (max-width: 650px) {
+	.social-title {
+		font-size: 1.5em;
+	}
+
+	.active-social-icon {
+		height: 30px;
+		width: 30px;
+	}
 }
 
 .main-container {
 	margin-top: 30px;
 	min-height: 40em;
+	margin:0;
 }
 
 .social-container {
@@ -420,7 +508,7 @@ nav ul li a {
 }
 
 .photobox__preview {
-	
+
 	display: block;
 	max-width: 100%;
 }
@@ -430,8 +518,8 @@ nav ul li a {
 }
 
 .photobox_type10 .photobox__previewbox:before {
-	
-	
+
+
 	width: 0;
 	height: 0;
 	padding: 25%;
@@ -446,14 +534,14 @@ nav ul li a {
 }
 
 .photobox_type10:hover .photobox__previewbox:before {
-	
+
 	cursor: pointer;
 	transform: translate(-50%, -50%) scale(4);
 	transition-duration: var(--photoboxAnimationDuration, .8s);
 }
 
 .photobox_type10 .photobox__label {
-	font-size:2em;
+	font-size: 2em;
 	font-family: 'Lato', sans-serif;
 	width: 95%;
 	text-align: center;
@@ -481,11 +569,8 @@ nav ul li a {
 
 @media only screen and (max-width:770px) {
 	#button1 {
-		width: 40px;
-		height: 40px;
-		font-size: 0.5em;
 		transform: translateX(26px);
-		margin-right: 7px;
+		margin-right: 6px;
 	}
 
 	#button1:hover {
@@ -496,7 +581,7 @@ nav ul li a {
 	#button1::after {
 		line-height: 40px;
 	}
-	
+
 
 }
 
@@ -505,7 +590,9 @@ nav ul li a {
 		transform: scale(1.2);
 
 	}
-	
+
+	.active-social-icon {}
+
 }
 
 @media only screen and (max-width: 900px) {

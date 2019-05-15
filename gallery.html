@@ -34,12 +34,12 @@
 			<div class="collapse navbar-collapse " id="navbarNavDropdown">
 				<ul class="navbar-nav ml-lg-auto ">
 
-					<li class="nav-item  ">
+					<li class="nav-item active ">
 
 						<a class="nav-link menu" href="index.html">O hodowli</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link menu active" href="gallery.html">Koty w hodowli</a>
+						<a class="nav-link menu" href="gallery.html">Koty w hodowli</a>
 					</li>
 					<li class="nav-item dropdown menu">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,6 +66,7 @@
 
 		</div>
 	</nav>
+
 	<div class="title-container">
 	<div class="background-container">
 	<div class="font-container  text-center">
@@ -79,6 +80,7 @@
       <div class="swiper-slide" style="background-image: url(img/holly1.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(img/holly2.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(img/holka.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/holka1.jpg)"></div>
        </div>
        <div class="swiper-pagination"></div>
       
@@ -208,11 +210,7 @@
 		sr.reveal('.title-gallery,.fal,.swipe-content', {
 			delay: 500
 		});
-		sr.reveal('.swiper-container', {
-			origin: 'right',
-			distance: '400px',
-			duration: 1000
-		});
+		
 		
 	</script>
       
@@ -232,8 +230,8 @@
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-        rotate: 50,
-        stretch: 1,
+        rotate: 55,
+        stretch: 0,
         depth: 100,
         modifier: 1,
         slideShadows : true,
