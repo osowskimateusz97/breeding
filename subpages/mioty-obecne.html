@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta http-equiv="Page-enter" content="revealTrans(Duration=3,Transition=3)">
-	<title>Galeria Holly</title>
-
-	<link rel="shortcut icon" href="icon/16px.png">
-	<link rel="stylesheet" href="reset.css" type="text/css">
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="swiper.css">
-	<link rel="stylesheet" href="gallery-style.css" type="text/css">
+	<title>Aktualne mioty</title>
+	<link rel="shortcut icon" href="../icon/16px.png">
+	<link rel="stylesheet" href="../styles/reset.css" type="text/css">
+	<link rel="stylesheet" href="../style.css" type="text/css">
+	<link rel="stylesheet" href="../styles/mioty-obecne.css">
+	<link rel="stylesheet" href="../styles/gallery-style.css" type="text/css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="https://unpkg.com/scrollreveal"></script>
-	
-	</head>
-	<body>
-	
-		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container">
 
 			<a class="navbar-brand nav" href="#">
-				<a href="index.html"><img class="cat-icon" src="icon/cat-icon.svg" alt="cat icon"></a>
-				<a href="index.html" class="title"><h1 class="title">Czas na Kota*PL</h1></a>
+				<a href="../index.html"><img class="cat-icon" src="/timeforcat/icon/cat-icon.svg" alt="cat icon"></a>
+				<a href="../index.html" class="title"><h1 class="title">Czas na Kota*PL</h1></a>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -36,7 +29,7 @@
 
 					<li class="nav-item active ">
 
-						<a class="nav-link menu" href="index.html">O hodowli</a>
+						<a class="nav-link menu" href="../index.html">O hodowli</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link menu" href="gallery.html">Koty w hodowli</a>
@@ -47,15 +40,14 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-							<a class="dropdown-item" href="#">Mioty obecne</a>
+							<a class="dropdown-item" href="mioty-obecne.html">Mioty obecne</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Mioty planowane</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Mioty poprzednie</a>
+							<a class="dropdown-item" href="mioty-planowane.html">Mioty planowane</a>
+							
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link menu" href="#">Zakup kota</a>
+						<a class="nav-link menu" href="rezerwacja.html">Rezerwacja kociaka</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link menu" href="contact.html">Kontakt</a>
@@ -66,31 +58,20 @@
 
 		</div>
 	</nav>
-
-	<div class="title-container">
-	<div class="background-container">
-	<div class="font-container  text-center">
-	<h1 class="title-font">Zdjęcia kotki Holly</h1>
-	</div>
 	
 	
-	<div class="swiper-container">
-   <div class="swiper-wrapper">
-      
-      <div class="swiper-slide" style="background-image: url(img/holly1.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/holly2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/holka.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/holka1.jpg)"></div>
-       </div>
-       <div class="swiper-pagination"></div>
-      
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container present-litters-container text-center">
+    <h1 class="display-4 present-litters">Mioty obecne</h1>
+    <p class="content present-litters-content">Aktualnie czekamy na miot A.</p>
+    <img class="cat-vector" src="../img/cat-1583430.svg" alt="">
   </div>
-     </div>
-      </div>
-      
-      
-      
-      <!-- Footer -->
+</div>
+	
+	
+	
+	
+	<!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5">
 
   <div style="background-color: #21d192;">
@@ -193,57 +174,8 @@
 </footer>
 <!-- Footer -->
     
-      
-     
-		
-
-		
-		
-				
-				
 	
-
-      
-      <script>
-		window.sr = ScrollReveal();
-
-		sr.reveal('.title-gallery,.fal,.swipe-content', {
-			delay: 500
-		});
-		
-		
-	</script>
-      
-      
-      
-      
-   
-    <!-- Add Pagination -->
-    
-  
 	
-	<script type="text/javascript" src="script/swiper.min.js"></script>
-	<script>
-	 var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 55,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
-  <!-- -->
-	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”> </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+</body>
 </html>

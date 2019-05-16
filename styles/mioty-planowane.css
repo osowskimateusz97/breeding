@@ -1,0 +1,85 @@
+.present-litters,
+.present-litters-content
+{
+	color:#000 ;
+}
+.containerr{
+	
+	height: 70vh;
+}
+.jumbotron-fluid{
+	margin:0 !important;
+	
+}
+
+
+.container-photo{
+	
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+.heart{
+	width: 30em;
+	animation: heartbeat 2s infinite;
+}
+
+.photo-cat{
+	margin-top:30px;
+	width:400px;
+	height: 300px;
+	border-radius: 50px;
+}
+.caption-cat{
+	margin-top:20px;
+	color:#000;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:1.5em;
+}
+#uranos{
+	width:300px;
+}
+#holly{
+	left:-20%;
+	position:relative;
+}
+.caption-holly{
+	position: absolute;
+	transform: translateX(20%);
+	
+}
+.caption-uranos{
+	transform: translateX(5%);
+}
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+

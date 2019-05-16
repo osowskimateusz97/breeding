@@ -49,6 +49,10 @@
 	letter-spacing: 0.2px;
 	padding: 20px;
 }
+.cat-vector
+{
+	height: 30vh;
+}
 
 .blockquote-footer {
 	font-family: 'Raleway', sans-serif;
@@ -77,7 +81,7 @@
 .lead {
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.1px;
-	height: 80vh;
+	min-height: 80vh;
 	font-weight: 1000;
 	display:flex;
 	align-items: center;
@@ -86,6 +90,7 @@
 	color:#000;
 	
 	}
+
 .lead p {
 	font-size:1.3rem;
 }
@@ -100,7 +105,7 @@
 
 .breeding-container{
 	
-	background: url(img/woman-3077180_1280.jpg);
+	background: url(img/background-about-breeding.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -126,7 +131,9 @@
 		
 }
  
-
+.big-container{
+	height:100vh;
+}
 
 
 .logo-fife{
@@ -146,7 +153,6 @@
 
 .carousel-inner {
 	max-height: 93.5vh;
-
 }
 
 .carousel-item img {
@@ -186,49 +192,6 @@
 	transform: translate(-50%, -50%);
 }
 
-.button {
-	padding: 0.4em 0.6em;
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: black;
-	border: 2px solid black;
-	font-size: 1.2em;
-	display: inline-block;
-	border-radius: 1em;
-	transition: all 0.3s ease-in-out;
-	position: relative;
-	overflow: hidden;
-	background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-}
-
-.button::before {
-	content: "";
-	background-color: rgba(255, 255, 255, 0.5);
-	height: 100%;
-	width: 3em;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -4.5em;
-	transform: skewX(-45deg) translateX(0);
-	transition: none;
-
-}
-
-.button:hover {
-	background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-	color: #000;
-	border-bottom: 4px solid darken(red, 10%);
-	text-decoration: none;
-}
-
-.button:hover::before {
-	transform: skewX(-45deg) translateX(13.5em);
-	transition: all 0.5s ease-in-out;
-}
 
 
 
@@ -244,7 +207,7 @@
 
 @media only screen and (max-width: 650px) {
 	.lead p{
-		font-size:0.6em;
+		font-size:0.8em;
 	}
 	.logo-fife{
 		width:40px;
@@ -260,7 +223,7 @@
 	}
 
 	.btn1 {
-		box-sizing: border-box;
+		padding:1px 5px;
 		margin-top: 3em;
 		left: -50px;
 		color: black;

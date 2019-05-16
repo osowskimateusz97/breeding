@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="Page-enter" content="revealTrans(Duration=3,Transition=3)">
+
 	<title>Czas na Kota</title>
 
 	<link rel="shortcut icon" href="icon/16px.png">
-	<link rel="stylesheet" href="reset.css" type="text/css">
+	<link rel="stylesheet" href="styles/reset.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="gallery-style.css" type="text/css">
+	<link rel="stylesheet" href="styles/gallery-style.css" type="text/css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,19 +20,23 @@
 
 
 
-	
+
 
 
 </head>
 
 <body>
+
 	<a id="button1"></a>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container">
 
 			<a class="navbar-brand nav" href="#">
 				<a href="index.html"><img class="cat-icon" src="icon/cat-icon.svg" alt="cat icon"></a>
-				<a href="index.html" class="title"><h1 class="title">Czas na Kota*PL</h1></a>
+				<a href="index.html" class="title">
+					<h1 class="title">Czas na Kota*PL</h1>
+				</a>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -45,7 +49,7 @@
 						<a class="nav-link menu" href="index.html">O hodowli</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link menu" href="gallery.html">Koty w hodowli</a>
+						<a class="nav-link menu" href="subpages/gallery.html">Koty w hodowli</a>
 					</li>
 					<li class="nav-item dropdown menu">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,25 +57,25 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-							<a class="dropdown-item" href="#">Mioty obecne</a>
+							<a class="dropdown-item" href="subpages/mioty-obecne.html">Mioty obecne</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Mioty planowane</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Mioty poprzednie</a>
+							<a href="subpages/mioty-planowane.html" class="dropdown-item" href="subpages/mioty-planowane">Mioty planowane</a>
+							
+							
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link menu" href="#">Zakup kota</a>
+						<a class="nav-link menu" href="subpages/rezerwacja-kota">Rezerwacja kociaka</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link menu" href="contact.html">Kontakt</a>
+						<a class="nav-link menu" href="subpages/contact.html">Kontakt</a>
 					</li>
 				</ul>
 
 			</div>
 
 		</div>
-		
+
 	</nav>
 
 	<div id="slides" class="carousel slide " data-ride="carousel">
@@ -87,7 +91,7 @@
 				<div class="carousel-caption ">
 					<h1 class="display-2">Czas na Kota*PL</h1>
 					<h3 class="content-carousel ">Hodowla kotów brytyjskich</h3>
-					<button type="button" class="btn btn-outline-light  btn-md carousel-btn"> Zobacz więcej</button>
+					<a href="#breed"><button type="button" class="btn btn-outline-light  btn-md carousel-btn"> Zobacz więcej</button></a>
 
 
 				</div>
@@ -108,28 +112,32 @@
 				<blockquote class="blockquote text-center">
 					<p class="mb-0 citate"> &#x201E;Obcując z kotem, człowiek ryzykuje jedynie to, że stanie się wewnętrznie bogatszy&#x201C;</p>
 					<footer class="blockquote-footer">Sidonie-Gabrielle Colette</footer>
+					<img class="cat-vector" src="img/cat-1583430.svg" alt="kot" >
 				</blockquote>
 			</div>
 		</div>
 
 	</div>
 
+
+
+
 	<div class="container-fluid  breeding-container">
 
 		<div class="row welcome ">
 			<div class="col-12">
-				
+
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-12  col-lg-12 col-xl-12 container-lead ">
+		<div id="breed" class="col-xs-12 col-sm-12 col-md-12  col-lg-12 col-xl-12 container-lead ">
 			<div class="breeding-info col-xs-12 col-sm-12  col-md-12  col-lg-12 col-xl-8">
-			<h1 class="introduce text-center">O hodowli</h1>
-			<div class="lead text-center col-xs-12 col-sm-12  col-md-12  col-lg-12 offset-xl-1 col-xl-10">
-			<img class="logo-fife" src="img/fifelogo.gif" alt="logo fife">
-		<img class="logo-fife" src="img/fpl.png" alt="logo fpl">
-				<p>Hodowla Czas na Kota*PL została zarejestrowana w styczniu 2019 roku w <span style="color:#3399ff; font-weight: 700">CCW - Stowarzyszenie Miłośników Kotów Cat Club Wrocław </span>będącym członkiem federacji Felis Polonia, działającej pod patronatem <span style=" color:#b30000; font-weight: 700">Międzynarodowej Federacji Felinologicznej - Federation Internationale Feline (FIFE)</span>.<br>W mojej hodowli mieszka kotka brytyjska z renomowanych, światowych hodowli, niosąca doskonałe europejskie linie hodowlane.
-				Hodowlę prowadzimy z pasją oraz ogromnym zaangażowaniem. by koty były szczęśliwe oraz by dobrze się u nas czuły. Towarzyszą nam w obowiązkach dnia codziennego, nie ograniczamy im przestrzeni- mają do dyspozycji całe mieszkanie.</p>
-				
+				<h1 class="introduce text-center">O hodowli</h1>
+				<div class="lead text-center col-xs-12 col-sm-12  col-md-12  col-lg-12 offset-xl-1 col-xl-10">
+					<img class="logo-fife" src="img/fifelogo.gif" alt="logo fife">
+					<img class="logo-fife" src="img/fpl.png" alt="logo fpl">
+					<p>Hodowla Czas na Kota*PL została zarejestrowana w styczniu 2019 roku w <span style="color:#3399ff; font-weight: 700">CCW - Stowarzyszenie Miłośników Kotów Cat Club Wrocław </span>będącym członkiem federacji Felis Polonia, działającej pod patronatem <span style=" color:#b30000; font-weight: 700">Międzynarodowej Federacji Felinologicznej - Federation Internationale Feline (FIFE)</span>.<br><br>W mojej hodowli mieszka kotka brytyjska z renomowanych, światowych hodowli, niosąca doskonałe europejskie linie hodowlane.
+						Hodowlę prowadzimy z pasją oraz ogromnym zaangażowaniem. by koty były szczęśliwe oraz by dobrze się u nas czuły. Towarzyszą nam w obowiązkach dnia codziennego, nie ograniczamy im przestrzeni- mają do dyspozycji całe mieszkanie.</p>
+
 				</div>
 			</div>
 		</div>
@@ -153,107 +161,107 @@
 			</div>
 
 		</div>
-		
+
 		<div class=" row container-cat-photo col-12 ">
 			<figure class="figure col-12 col-sm-12 col-md-6 col-lg-4 ">
-				<a href="gallery.html"><div class="photobox photobox_type10">
-        <div class="photobox__previewbox">
-          <img src="img/holly1.jpg" class="photobox__preview" alt="Preview">
-          <span class="photobox__label">Galeria zdjęć</span>
-        </div>
-      </div></a>
+				<a href="subpages/gallery.html">
+					<div class="photobox photobox_type10">
+						<div class="photobox__previewbox">
+							<img src="img/holly1.jpg" class="photobox__preview" alt="Preview">
+							<span class="photobox__label">Galeria zdjęć</span>
+						</div>
+					</div>
+				</a>
 			</figure>
 			<div class="jumbotron jumbotron-fluid col-12 col-sm-12 col-md-6 col-lg-8">
 				<div class="container-fluid">
-					<h1 class="display-4 holly-cat">Kotka Holly</h1>
-					<p class=" about-holly"> Jest to kot z charakterem, lecz bardzo często przychodzi na "mizianko". Kotka mieszka w naszej hodowli od 9 miesiąca życia. Jest bardzo towarzyska, gdy tylko przychodzę do domu od razu czeka na mnie pod drzwiami. Gęste, pluszowe kocie futerko zachęca, by je głaskać, zanurzyć w nim dłoń i cieszyć się tym momentem jak najdłużej. </p>
-					<div class="  wrapper wrap1 col-8">
-					<a href="#" class="button btn1 ">więcej o Holly</a>
+					<h1 class="display-4 holly-cat text-center">Kotka Holly</h1>
+					<p class=" about-holly col-md-10 offset-md-1 text-center"> Jest to kot z charakterem, lecz bardzo często przychodzi na "mizianko". Kotka mieszka w naszej hodowli od 9 miesiąca życia. Jest bardzo towarzyska, gdy tylko przychodzę do domu od razu czeka na mnie pod drzwiami. Gęste, pluszowe kocie futerko zachęca, by je głaskać, zanurzyć w nim dłoń i cieszyć się tym momentem jak najdłużej. </p>
+
 				</div>
-				</div>
-				
+
 			</div>
 		</div>
 	</div>
-	
 
-<!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5">
 
-  <div style="background-color: #21d192;">
-    <div class="container">
+	<!-- Footer -->
+	<footer class="page-footer font-small blue-grey lighten-5">
 
-      <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center">
+		<div style="background-color: #21d192;">
+			<div class="container">
 
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Skontaktuj się z nami poprzez media społecznościowe</h6>
-        </div>
-        <!-- Grid column -->
+				<!-- Grid row-->
+				<div class="row py-4 d-flex align-items-center">
 
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
+					<!-- Grid column -->
+					<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+						<h6 class="mb-0">Skontaktuj się z nami poprzez media społecznościowe</h6>
+					</div>
+					<!-- Grid column -->
 
-          <!-- Facebook -->
-          <a href= "#" class="fb-ic">
-            <i class="fab fa-facebook-f white-text mr-4"></i></a>
-         
-       <!--Instagram-->
-          <a href="#" class="ins-ic">
-            <i class="fab fa-instagram white-text"></i></a>
+					<!-- Grid column -->
+					<div class="col-md-6 col-lg-7 text-center text-md-right">
 
-        </div>
-        <!-- Grid column -->
+						<!-- Facebook -->
+						<a href="#" class="fb-ic">
+							<i class="fab fa-facebook-f white-text mr-4"></i></a>
 
-      </div>
-      <!-- Grid row-->
+						<!--Instagram-->
+						<a href="#" class="ins-ic">
+							<i class="fab fa-instagram white-text"></i></a>
 
-    </div>
-  </div>
+					</div>
+					<!-- Grid column -->
 
-  <!-- Footer Links -->
-  <div class="container text-end text-md-left mt-5">
+				</div>
+				<!-- Grid row-->
 
-    <!-- Grid row -->
-    <div class="row mt-3 dark-grey-text justify-content-end">
+			</div>
+		</div>
 
-      
-      
-      <!-- Grid column -->
+		<!-- Footer Links -->
+		<div class="container text-end text-md-left mt-5">
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-xl-4 ">
+			<!-- Grid row -->
+			<div class="row mt-3 dark-grey-text justify-content-end">
 
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
-        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-			<a href="https://www.google.com/maps/dir//Klasztorna+50,+52-234+Wroc%C5%82aw/@51.0622716,17.0389929,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x470fc3035a330e15:0xef4c234c8e39c306!2m2!1d17.043381!2d51.0622649" target="_blank"> <i class="fas fa-home mr-3"></i> Wrocław, Klasztorna 50, 52-234 Wrocław</a></p>
-        <p>
-			<a href="mailto:osowski.mateuszz@gmail.com"> <i class="fas fa-envelope mr-3"></i> osowski.mateuszz@gmail.com</a></p>
-        <p>
-			<a href=tel:+48504912288><i class="fas fa-phone mr-3"></i> + 48 504 912 288</a></p>
-        
 
-      </div>
-      <!-- Grid column -->
 
-  
+				<!-- Grid column -->
 
-  </div>
-  <!-- Footer Links -->
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-4 col-xl-4 ">
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
-    <a class="dark-grey-text"> Mateusz Osowski</a>
-  </div>
-  <!-- Copyright -->
-	</div>
-</footer>
-<!-- Footer -->
-    
-	
+					<!-- Links -->
+					<h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+					<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>
+						<a href="https://www.google.com/maps/dir//Klasztorna+50,+52-234+Wroc%C5%82aw/@51.0622716,17.0389929,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x470fc3035a330e15:0xef4c234c8e39c306!2m2!1d17.043381!2d51.0622649" target="_blank"> <i class="fas fa-home mr-3"></i> Wrocław, Klasztorna 50, 52-234 Wrocław</a></p>
+					<p>
+						<a href="mailto:osowski.mateuszz@gmail.com"> <i class="fas fa-envelope mr-3"></i> osowski.mateuszz@gmail.com</a></p>
+					<p>
+						<a href=tel:+48504912288><i class="fas fa-phone mr-3"></i> + 48 504 912 288</a></p>
+
+
+				</div>
+				<!-- Grid column -->
+
+
+
+			</div>
+			<!-- Footer Links -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
+				<a class="dark-grey-text"> Mateusz Osowski</a>
+			</div>
+			<!-- Copyright -->
+		</div>
+	</footer>
+	<!-- Footer -->
+
+
 
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
@@ -293,8 +301,8 @@
 
 	<!-- -->
 
-	
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="script/button.js"></script>
 	<script>
@@ -304,9 +312,9 @@
 			distance: '700px',
 			duration: 1700,
 			delay: 300
-			
+
 		});
-		
+
 		sr.reveal('.content-carousel', {
 			delay: 300
 		});

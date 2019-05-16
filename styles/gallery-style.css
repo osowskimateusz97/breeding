@@ -65,7 +65,7 @@ a {
 }
 
 .title-container {
-	background: url(img/proba.jpg);
+	background: url(../img/background-gallery.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
