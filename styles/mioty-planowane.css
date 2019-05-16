@@ -4,12 +4,11 @@
 	color:#000 ;
 }
 .containerr{
-	
-	height: 70vh;
+	min-width:100vw;
+	min-height: 30vh;
 }
 .jumbotron-fluid{
 	margin:0 !important;
-	
 }
 
 
@@ -19,8 +18,11 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
+	align-items:center;
 }
 .heart{
+	
+	margin-left:20px;
 	width: 30em;
 	animation: heartbeat 2s infinite;
 }
@@ -37,22 +39,58 @@
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size:1.5em;
 }
+.caption-holly{
+	transform: translateX(30%);
+}
 #uranos{
 	width:300px;
 }
-#holly{
-	left:-20%;
-	position:relative;
-}
-.caption-holly{
-	position: absolute;
-	transform: translateX(20%);
-	
-}
+
 .caption-uranos{
 	transform: translateX(5%);
 }
-
+@media only screen and (max-width:1200px){
+	.photo-cat{
+	margin-top:30px;
+	max-width:200px;
+	max-height: 200px;
+	border-radius: 50px;
+}
+	.caption-cat{
+		
+		font-size:1em;
+	}
+	.heart{
+		width: 20em;
+		align-self: flex-start;
+	}
+}
+@media only screen and (max-width:800px){
+	.container-photo{
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		align-content: center;
+		
+	}
+	.photo-cat{
+	margin-top:30px;
+	max-width:200px;
+	max-height: 200px;
+	border-radius: 50px;
+}
+	.caption-cat{
+		font-size:1em;
+	}
+	.heart{
+		
+		width:15em;
+	}
+	.present-litters{
+		font-size:2em !important;
+	}
+	
+}
 
 @keyframes heartbeat
 {
