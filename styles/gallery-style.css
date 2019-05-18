@@ -33,6 +33,9 @@
 	cursor: pointer;
 
 }
+.cat-book{
+	background-position: left;
+}
 
 .fb-ic:hover, .ins-ic:hover {
 	color: black !important;

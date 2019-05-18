@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap&subset=latin-ext');
+
+
+.navbar{
+	border-bottom: 2px dashed #1DB954;
+	
+}
+
+
+.breeding-container{
+	background: url(../img/cat-2856531_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0 auto;
+}
+.breeding-info{
+	
+	background:  rgba(255, 255, 255, 0.9);
+	
+}
+
+.content-reservation li{
+	margin-left:2em;
+	font-size:0.8em;
+	
+}
+.introduce{
+	margin:1em 0;
+	font-family: 'Amatic SC', cursive;
+}
+.lead{
+	line-height: 1.3em;
+	font-family: 'Pontano Sans', sans-serif !important;
+	
+}
+.content-reservation p {
+	font-size:0.9em;
+}
+.end-container{
+	margin-bottom: 4em;
+}
+@media screen and (max-width:600px) {
+	.content-reservation{
+		font-size:0.8em;
+	}
+	.end-container{
+		font-size:1.2em;
+	}
+	
+}
+

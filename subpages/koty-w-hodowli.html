@@ -4,24 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Aktualne mioty</title>
+	<link href="../styles/lightbox.css" rel="stylesheet">
 	<link rel="shortcut icon" href="../icon/16px.png">
 	<link rel="stylesheet" href="../styles/reset.css" type="text/css">
 	<link rel="stylesheet" href="../style.css" type="text/css">
-	<link rel="stylesheet" href="../styles/mioty-planowane.css">
+	<link rel="stylesheet" href="../styles/koty-w-hodowli.css">
 	<link rel="stylesheet" href="../styles/gallery-style.css" type="text/css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container">
 
 			<a class="navbar-brand nav" href="#">
 				<a href="../index.html"><img class="cat-icon" src="../icon/cat-icon.svg" alt="cat icon"></a>
-				<a href="../index.html" class="title"><h1 class="title">Czas na Kota*PL</h1></a>
+				<a href="../index.html" class="title">
+					<h1 class="title">Czas na Kota*PL</h1>
+				</a>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -45,7 +50,7 @@
 							<a class="dropdown-item" href="mioty-obecne.html">Mioty obecne</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="mioty-planowane.html">Mioty planowane</a>
-							
+
 						</div>
 					</li>
 					<li class="nav-item">
@@ -60,29 +65,52 @@
 
 		</div>
 	</nav>
-	
-	
-	<div class="jumbotron jumbotron-fluid">
-  <div class="containerr">
-    <h1 class="display-4 present-litters text-center">Mioty planowane</h1>
-   <div class="container-photo">
-   <div class="holly-container">
-   <figure >
-    <a href="gallery.html"><img id="holly" class="photo-cat " src="../img/holly600px.jpg" alt=""></a>
-    <figcaption class="caption-cat caption-holly">Holly Amor-Kot*PL</figcaption>
-    </figure>
-    </div>
-   <img  class="heart " src="../img/image2vector.svg" alt="heart">
-   <figure>
-   <img id="uranos" class="photo-cat " src="../img/uranos.jpg" alt="uranos chempion">
-   <figcaption class="caption-cat caption-uranos">CH Uranos Kocia Ostoja*PL</figcaption>
-   </figure>
-   </div>
-  </div>
-</div>
-	
-	
-	
+	<div class="container-fluid">
+		<div class="row jumbotron text-center">
+		<div class="container-holly col-12 d-flex flex-row align-items-center justify-content flex-wrap">
+				<div class="col-12 col-md-6 col-lg-6 text-center">
+				<a href="../img/holly_small1-min.jpg" data-lightbox="image-1" data-title="Holly Amor-Kot*PL">
+					<img class="photo-cat" src="../img/holly600px.jpg" alt="Kotka Holly Amor-Kot*PL"></a>
+					</div>
+				<div class="options  col-md-6  col-lg-6 text-center offset-xl-0 ">
+					<h3 class="holly-caption col-12 text-left">Holly Amor-Kot*PL</h3>
+
+					<ul class="main-properties  ">
+						<div class="properties d-flex ">
+							<li class="d-flex col-5 col-sm-3 col-md-6  col-lg-5 col-xl-2">Kolor </li>
+							<p>niebieski</p>
+						</div>
+						<div class="properties  d-flex  ">
+							<li class="d-flex col-5 col-sm-3 col-md-6 col-lg-5 col-xl-2">Data ur.</li>
+							<p>2018-01-21</p>
+
+						</div>
+						<div class="properties  d-flex   ">
+							<li class="d-flex col-5 col-sm-3 col-md-6 col-lg-5 col-xl-2">Matka </li>
+							<p id="father">Joshi-Su-Wymarzony Kot*PL</p>
+						</div>
+						<div class="properties  d-flex  ">
+							<li class="d-flex col-5 col-sm-3 col-md-6 col-lg-5 col-xl-2">Ojciec</li>
+							<p >CH Kaylay Megilla*PL</p> 
+						</div>
+						<div class="properties  d-flex  ">
+							<li class="d-flex  col-5 col-sm-3 col-md-6 col-lg-5 col-xl-2">Felv i Fiv</li>
+							<p>Ujemny</p> 
+						</div>
+						<li >  </li>
+						<div class="properties  d-flex  ">
+							<li class="d-flex col-5 col-sm-3 col-md-6 col-lg-5 col-xl-2">Grupa krwi </li>
+							<p>B</p> 
+						</div>
+						<a href="gallery.html"><button type="button" class="btn btn-success">Galeria</button></a>
+						
+						
+						<a href="../img/rodowodd.jpg" data-lightbox="image-1" data-title="Rodowód Holly Amor-Kot*PL"><button type="button" class="btn btn-dark">Rodowód</button></a>
+					</ul>
+			</div>
+			</div>
+		</div>
+	</div>
 	
 	<!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5">
@@ -187,8 +215,15 @@
 </footer>
 <!-- Footer -->
     
-	
+
+
+
+
+
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="../script/lightbox-plus-jquery.js"></script>
 </body>
 </html>

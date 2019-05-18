@@ -5,22 +5,33 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=latin-ext');
+
 
 
 .navbar {
 	font-family: 'Raleway', sans-serif;
-
+	border-bottom: 2px dashed #1DB954;
+}
+.carousel::after{
+	content:'';
+	display:block;
+	width:100%;
+	border:1px solid #000;
+	bottom:0;
 }
 
-.navbar-light .navbar-toggler {
-	border: 2px solid #ffffff;
 
-}
 
-.dropdown-item:hover {
-	background: #000000;
-	opacity: 0.7;
-
+.start-content::after{
+	content:'';
+	width:80%;
+	margin:0 auto;
+	border:1px solid #000;
+	display:block;
+	opacity:0.2;
+	transform: translateY(5em);
+	
 }
 
 .display-2 {
@@ -48,26 +59,32 @@
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0.2px;
 	padding: 20px;
+	
 }
-.cat-vector
-{
-	height: 30vh;
+
+.citate-container {
+	background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.cat-vector {
+	height: 20vh;
+}
+
+.certyfikat {
+	transform: translate(-10%, -25%);
+	width: 400px;
+	height: 300px;
 }
 
 .blockquote-footer {
 	font-family: 'Raleway', sans-serif;
 }
 
-
-
 .introduce {
-	margin-top:2em;
+	margin-top: 1em;
 	font-size: 3em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
-
-
-
 
 .dropdown-menu.show {
 	border: 0px;
@@ -83,66 +100,69 @@
 	letter-spacing: 0.1px;
 	min-height: 80vh;
 	font-weight: 1000;
-	display:flex;
+	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	color:#000;
-	
-	}
+	color: #000;
+
+}
 
 .lead p {
-	font-size:1.3rem;
+	font-size: 1.3rem;
 }
-.container-lead{
-	position:relative;
+
+.container-lead {
+	position: relative;
 	display: flex;
 	justify-content: center;
 }
-.jumbotron:first-child{
-	margin-bottom:0 !important;
+
+.jumbotron:first-child {
+	margin-bottom: 0 !important;
 }
 
-.breeding-container{
-	
+.breeding-container {
+
 	background: url(img/background-about-breeding.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	margin: 0 auto;
 }
-.breeding-info{
-	
-	background:  rgba(255, 255, 255, 0.7);
-	
-	
+
+.breeding-info {
+
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.photo-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
 }
 
 .breeding-info::before,
-{
-	content:'';
+	{
+	content: '';
 	border: 1px solid #000;
-	position:absolute;
-	display:block;
-	width:100%;
+	position: absolute;
+	display: block;
+	width: 100%;
 	height: 100%;
-	opacity:1 !important;
-	
-		
-}
- 
-.big-container{
-	height:100vh;
-}
+	opacity: 1 !important;
 
 
-.logo-fife{
-	width:100px;
+}
+
+.logo-fife {
+	width: 100px;
 	height: 100px;
-	margin: 0 auto;
-	
-	
+
 }
+
 .navbar-nav li {
 	margin-left: 9px;
 }
@@ -206,13 +226,21 @@
 
 
 @media only screen and (max-width: 650px) {
-	.lead p{
-		font-size:0.8em;
+	.certyfikat {
+		width: 120px;
+		height: 100px;
 	}
-	.logo-fife{
-		width:40px;
-	height: 40px;
+
+	.lead p {
+		font-size: 0.8em;
 	}
+
+	.logo-fife {
+
+		width: 40px;
+		height: 40px;
+	}
+
 	.display-2 {
 		font-size: 1.5em !important;
 	}
@@ -223,14 +251,14 @@
 	}
 
 	.btn1 {
-		padding:1px 5px;
+		padding: 1px 5px;
 		margin-top: 3em;
 		left: -50px;
 		color: black;
 	}
 
 	.introduce {
-		margin-top:15px;
+		margin-top: 15px;
 		font-size: 1.5em;
 	}
 
@@ -277,7 +305,7 @@
 
 	}
 
-	
+
 
 	.button2 {
 		padding: 6px;
@@ -324,9 +352,7 @@ nav.black ul li a {
 }
 
 nav ul li a {
-
 	color: #151515;
-
 	transition: .2s;
 }
 
@@ -350,7 +376,7 @@ nav ul li a {
 	z-index: 1000;
 	animation-name: btn;
 	animation-duration: 2s;
-	
+
 
 
 
@@ -369,7 +395,7 @@ nav ul li a {
 
 #button1:hover {
 	cursor: pointer;
-	background-color:  #ccff66;
+	background-color: #ccff66;
 
 }
 
@@ -436,7 +462,7 @@ nav ul li a {
 .main-container {
 	margin-top: 30px;
 	min-height: 40em;
-	margin:0;
+	margin: 0;
 }
 
 .social-container {
